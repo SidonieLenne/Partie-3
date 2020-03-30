@@ -1,0 +1,12 @@
+header{
+    /*Texte*/
+    font-family: 'Sen', sans-serif;
+    text-align:center;
+    font-size: 30px;
+    max-width: 100%;
+    padding:90px;
+    /*Image de fond*/
+    background-image:url(images/header.jpg);
+    background-size:100%;
+    background-repeat:no-repeat ;
+}
