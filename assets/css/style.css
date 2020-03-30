@@ -42,3 +42,13 @@ li{
     padding-left:0px;
     padding-right:0px;
 }
+/*Texte de présentation*/
+#openingParagraph{
+    margin:50px;
+    padding:5px;
+    font-size:20px;
+    color:#2AAB9E;
+    font-family: 'Sen', sans-serif;
+    text-align:center;
+    background-image:linear-gradient(to left,#FFFFFF,#EFE8BF,#FFFFFF);
+}
