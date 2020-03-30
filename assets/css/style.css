@@ -10,3 +10,35 @@ header{
     background-size:100%;
     background-repeat:no-repeat ;
 }
+/*Barre de navigation*/
+#navBar{
+    border-top: solid 3px #DFD28F;
+}
+
+li{
+    display:inline;
+    padding-left:90px;
+    padding-right:90px;
+    font-family: 'Sen', sans-serif; 
+}
+/*Bouton Accueil*/
+#home{
+    color:#2AAB9E;
+}
+/*Bouton Destinations*/
+#destination{
+    color:#329F48;
+}
+/*Bouton Réservations*/
+#booking{
+    color:#89BF42;
+}
+/*Bouton Contact*/
+#contact{
+    color:#B2BF42;
+}
+/*Champ et bouton de recherche*/
+.searchBar, .searchButton{
+    padding-left:0px;
+    padding-right:0px;
+}
