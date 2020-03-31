@@ -11,10 +11,6 @@ header{
     background-repeat:no-repeat ;
 }
 /*Barre de navigation*/
-#navBar{
-    border-top: solid 3px #DFD28F;
-}
-
 li{
     display:inline;
     padding-left:90px;
@@ -51,4 +47,25 @@ li{
     font-family: 'Sen', sans-serif;
     text-align:center;
     background-image:linear-gradient(to left,#FFFFFF,#EFE8BF,#FFFFFF);
+    border-bottom:2px solid #89BF42;
+}
+/*Compte rendus de voyage*/
+#italia, #india, #japan{
+    float:left;
+    width:27%;
+    height:420px;
+    margin:20px;
+    padding:20px;
+    text-align: center;
+    font-family:'Sen', sans-serif;
+    color:#2AAB9E;
+    background-color:#EFE8BF;
+}
+
+img{
+    width:80%;
+}
+
+.interview{
+    color:#329F48;
 }
