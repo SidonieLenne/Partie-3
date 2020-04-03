@@ -1,21 +1,23 @@
+/*......Entête......*/
 header{
     /*Texte*/
-    font-family: 'Sen', sans-serif;
+    font-family:'Sen', sans-serif;
     text-align:center;
-    font-size: 30px;
-    max-width: 100%;
+    font-size:30px;
+    max-width:100%;
     padding:90px;
     /*Image de fond*/
-    background-image:url(images/header.jpg);
+    background-image:url('../images/header.jpg');
     background-size:100%;
     background-repeat:no-repeat ;
 }
-/*Barre de navigation*/
-li{
-    display:inline;
-    padding-left:90px;
-    padding-right:90px;
-    font-family: 'Sen', sans-serif; 
+/*......Barre de navigation......*/
+#listNav{
+    list-style-type:none;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    font-family:'Sen', sans-serif; 
 }
 /*Bouton Accueil*/
 #home{
@@ -33,30 +35,38 @@ li{
 #contact{
     color:#B2BF42;
 }
-/*Champ et bouton de recherche*/
-.searchBar, .searchButton{
-    padding-left:0px;
-    padding-right:0px;
+/*Pour retirer les barres sous les textes cliquables*/
+a{
+    text-decoration:none;
 }
-/*Texte de présentation*/
+
+.navBarIcon{
+    display:none;
+}
+
+/*#navBarIcon{display:none;}*/
+/*......Texte de présentation......*/
 #openingParagraph{
-    margin:50px;
+    margin-top:50px;
+    margin-bottom:50px;
     padding:5px;
+    padding-left:300px;
+    padding-right:300px;
     font-size:20px;
     color:#2AAB9E;
-    font-family: 'Sen', sans-serif;
+    font-family:'Sen', sans-serif;
     text-align:center;
     background-image:linear-gradient(to left,#FFFFFF,#EFE8BF,#FFFFFF);
     border-bottom:2px solid #89BF42;
 }
-/*Compte rendus de voyage*/
-#italia, #india, #japan{
+/*......Compte rendus de voyage......*/
+.trip{
     float:left;
     width:27%;
     height:420px;
     margin:20px;
     padding:20px;
-    text-align: center;
+    text-align:center;
     font-family:'Sen', sans-serif;
     color:#2AAB9E;
     background-color:#EFE8BF;
@@ -68,4 +78,26 @@ img{
 
 .interview{
     color:#329F48;
+}
+/*......Media Querries......*/
+@media only screen and (max-device-width : 480px) {
+    .trip{
+        clear:left;
+        width:100%;
+        height:auto;
+    }
+   /*Menu Burger (avec icône transparente pour l'instant)*/
+    #navBarIcon{
+        display:flex;
+    }
+    
+    li>a, ul>form{
+        display:none;
+    }
+
+    #openingParagraph{
+        width:auto;
+        margin:0px;
+        padding:0px;
+    }
 }
